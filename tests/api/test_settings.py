@@ -1,4 +1,7 @@
+import os
 from django.conf import settings
+from django.test import SimpleTestCase
+
 
 def test_database_name_in_settings():
     settings_file_path = os.path.join(settings.BASE_DIR, 'backend', 'settings.py')
