@@ -18,7 +18,7 @@ chrome_options.add_argument("--ignore-certificate-errors")
 
 driver = webdriver.Chrome(service=driver_service, options=chrome_options)
 
-driver.get("http://localhost:5000")
+driver.get("http://127.0.0.1:5000")
 
 def test_website_title():
    assert "Amit's Project EShop" in driver.title  # Check page title
