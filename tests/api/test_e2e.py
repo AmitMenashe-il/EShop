@@ -20,7 +20,7 @@ driver = webdriver.Chrome(service=driver_service, options=chrome_options)
 
 def check_title():
    try:
-      driver.get("https://localhost:5000")
+      driver.get("http://localhost:5000")
 
       #assert "Amit's Project EShop" in driver.title  # Check page title
       assert "mushmush" in driver.title  # Check page title
