@@ -15,4 +15,4 @@ def test_language_code():
     assert settings.LANGUAGE_CODE == 'en-us'
 
 def test_debug_mode():
-    assert settings.DEBUG == 'False'
+    assert settings.DEBUG is False
