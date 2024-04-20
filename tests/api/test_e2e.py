@@ -10,23 +10,22 @@ driver_service=chrome_service(driver_path)
 chrome_options = Options()
 capabilities = DesiredCapabilities.CHROME.copy()
 
-# set chrome configuration
 
+# set chrome configuration
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")  
 chrome_options.add_argument("--disable-dev-shm-usage") 
 capabilities['acceptInsecureCerts'] = True
 
-def test_page_load():
+driver = webdriver.Chrome(service=driver_service, options=chrome_options, desired_capabilities=capabilities)
+
+def check_title():
    try:
-        driver = webdriver.Chrome(service=driver_service, options=chrome_options, desired_capabilities=capabilities)
         driver.get("https://localhost:5000")
 
-        # check title
         assert "Amit's Project EShop" in driver.title  # Check page title
 
         # Add more assertions as needed for your specific page ??
 
-    finally:
-        # Close the WebDriver session
+   finally:
         driver.quit()
