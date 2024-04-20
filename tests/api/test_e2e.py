@@ -15,7 +15,7 @@ def test_page_load():
     chrome_options.add_argument("--no-sandbox")  
     chrome_options.add_argument("--disable-dev-shm-usage") 
 
-    driver = webdriver.Chrome(service=driver_server, options=chrome_options)
+    driver = webdriver.Chrome(service=driver_service, options=chrome_options)
 
     try:
         driver.get("https://localhost:5000")
