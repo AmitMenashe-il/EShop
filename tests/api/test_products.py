@@ -24,10 +24,6 @@ def test_product_creation():
   assert isinstance(p, Product) is True
   assert p.name == " Product Name "
 
-
-
-
-
 # Api test  - Integration testing
 def test_api_product_creation():
     client = APIClient()
@@ -36,4 +32,4 @@ def test_api_product_creation():
 
     # data = response.data
 
-    assert response.status_code == 401
+    assert response.status_code == 200
