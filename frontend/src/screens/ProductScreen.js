@@ -108,8 +108,8 @@ function ProductScreen({ match, history }) {
                   />
                 </ListGroup.Item>
 
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
 
+                <ListGroup.Item>Price: ILS{product.price}</ListGroup.Item>
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
@@ -123,7 +123,8 @@ function ProductScreen({ match, history }) {
                     <Row>
                       <Col>Price:</Col>
                       <Col>
-                        <strong>${product.price}</strong>
+
+                        <strong>ILS{product.price}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>

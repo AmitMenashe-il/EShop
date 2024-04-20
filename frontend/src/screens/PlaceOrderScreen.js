@@ -130,7 +130,8 @@ function PlaceOrderScreen({ history }) {
                         </Col>
 
                         <Col md={4}>
-                          {item.qty} X ${item.price} = $
+
+                          {item.qty} X ILS{item.price} = ILS
                           {(item.qty * item.price).toFixed(2)}
                         </Col>
                       </Row>
@@ -153,7 +154,7 @@ function PlaceOrderScreen({ history }) {
                 <Row>
                   <Col>Items:</Col>
 
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col>ILS{cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
@@ -161,7 +162,7 @@ function PlaceOrderScreen({ history }) {
                 <Row>
                   <Col>Shipping:</Col>
 
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>ILS{cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
@@ -169,7 +170,8 @@ function PlaceOrderScreen({ history }) {
                 <Row>
                   <Col>Tax:</Col>
 
-                  <Col>${cart.taxPrice}</Col>
+                  <Col>ILS{cart.taxPrice}</Col>
+
                 </Row>
               </ListGroup.Item>
 
@@ -177,7 +179,8 @@ function PlaceOrderScreen({ history }) {
                 <Row>
                   <Col>Total:</Col>
 
-                  <Col>${cart.totalPrice}</Col>
+
+                  <Col>ILS{cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
