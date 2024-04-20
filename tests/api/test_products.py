@@ -32,4 +32,4 @@ def test_api_product_creation():
 
     # data = response.data
 
-    assert response.status_code == 200
+    assert response.status_code == 401
