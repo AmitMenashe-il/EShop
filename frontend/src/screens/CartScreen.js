@@ -74,7 +74,7 @@ function CartScreen({ match, location, history }) {
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
 
-                  <Col>₹{item.price}</Col>
+                  <Col>ILS{item.price}</Col>
 
                   <Col md={3}>
                     <Form.Control
@@ -118,7 +118,7 @@ function CartScreen({ match, location, history }) {
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              ₹
+              ILS
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}

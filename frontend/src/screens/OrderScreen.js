@@ -190,7 +190,7 @@ function OrderScreen({ history, match }) {
                         </Col>
 
                         <Col md={4}>
-                          {item.qty} X ₹{item.price} = ₹
+                          {item.qty} X ILS{item.price} = ILS
                           {(item.qty * item.price).toFixed(2)}
                         </Col>
                       </Row>
@@ -213,7 +213,7 @@ function OrderScreen({ history, match }) {
                 <Row>
                   <Col>Items:</Col>
 
-                  <Col>₹{order.itemsPrice}</Col>
+                  <Col>ILS{order.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
@@ -221,7 +221,7 @@ function OrderScreen({ history, match }) {
                 <Row>
                   <Col>Shipping:</Col>
 
-                  <Col>₹{order.shippingPrice}</Col>
+                  <Col>ILS{order.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
@@ -229,7 +229,7 @@ function OrderScreen({ history, match }) {
                 <Row>
                   <Col>Tax:</Col>
 
-                  <Col>₹{order.taxPrice}</Col>
+                  <Col>ILS{order.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
@@ -237,7 +237,7 @@ function OrderScreen({ history, match }) {
                 <Row>
                   <Col>Total:</Col>
 
-                  <Col>₹{order.totalPrice}</Col>
+                  <Col>ILS{order.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
