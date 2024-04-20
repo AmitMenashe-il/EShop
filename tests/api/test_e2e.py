@@ -18,7 +18,7 @@ chrome_options.add_argument("--ignore-certificate-errors")
 
 driver = webdriver.Chrome(service=driver_service, options=chrome_options)
 
-def check_title():
+def test_website_title():
    try:
       driver.get("http://localhost:5000")
 
