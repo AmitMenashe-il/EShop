@@ -135,6 +135,7 @@ function ProductListScreen({ match, history }) {
                   <td>{product._id}</td>
                   <td>{product.name}</td>
                   <td>ILS{product.price}</td>
+
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
 

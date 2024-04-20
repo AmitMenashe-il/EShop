@@ -130,6 +130,7 @@ function PlaceOrderScreen({ history }) {
                         </Col>
 
                         <Col md={4}>
+
                           {item.qty} X ILS{item.price} = ILS
                           {(item.qty * item.price).toFixed(2)}
                         </Col>
@@ -170,12 +171,14 @@ function PlaceOrderScreen({ history }) {
                   <Col>Tax:</Col>
 
                   <Col>ILS{cart.taxPrice}</Col>
+
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total:</Col>
+
 
                   <Col>ILS{cart.totalPrice}</Col>
                 </Row>

@@ -213,6 +213,7 @@ function OrderScreen({ history, match }) {
                 <Row>
                   <Col>Items:</Col>
 
+
                   <Col>ILS{order.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
@@ -222,7 +223,7 @@ function OrderScreen({ history, match }) {
                   <Col>Shipping:</Col>
 
                   <Col>ILS{order.shippingPrice}</Col>
-                </Row>
+
               </ListGroup.Item>
 
               <ListGroup.Item>
@@ -230,6 +231,7 @@ function OrderScreen({ history, match }) {
                   <Col>Tax:</Col>
 
                   <Col>ILS{order.taxPrice}</Col>
+
                 </Row>
               </ListGroup.Item>
 
