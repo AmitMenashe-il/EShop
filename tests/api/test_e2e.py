@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.service import Service as chrome_service
 
 
 driver_path=ChromeDriverManager().install()
-driver_service=chrome_service(chrome_driver_path)
+driver_service=chrome_service(driver_path)
 
 def test_page_load():
   # set chrome headless, no sandbox and no shared memory
