@@ -88,6 +88,7 @@ pipeline {
                     script {
                         withCredentials([string(credentialsId: "DockerHubPW", variable: 'DOCKERHUB_PASSWORD')]) {
                             sh """
+                            sudo rm report.html
                             docker login -u amitmenashe -p ${DOCKERHUB_PASSWORD}
                             docker tag eshop amitmenashe/eshop
                             docker push amitmenashe/eshop
