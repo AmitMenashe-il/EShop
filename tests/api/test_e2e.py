@@ -27,5 +27,3 @@ driver.get("http://127.0.0.1:5000")
 def test_website_title():
    assert "Amit's Project EShop" in driver.title  # Check page title
 
-def test_add_items_to_cart():
-    pass
